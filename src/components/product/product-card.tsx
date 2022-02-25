@@ -3,7 +3,7 @@ import { Avatar, Box, Card, CardContent, Divider, Grid, Typography } from '@mui/
 import { Clock as ClockIcon } from '../../icons/clock';
 import { Download as DownloadIcon } from '../../icons/download';
 
-export const ProductCard = ({ product, ...rest }) => (
+export const ProductCard = ({ product, ...rest }): JSX.Element => (
   <Card
     sx={{
       display: 'flex',
