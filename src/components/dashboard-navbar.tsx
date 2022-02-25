@@ -6,8 +6,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Bell as BellIcon } from '../icons/bell';
 import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
+import { Theme } from '@mui/material/styles';
 
-const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
+const DashboardNavbarRoot = styled(AppBar)(({ theme }: { theme: Theme }) => ({
   backgroundColor: theme.palette.background.paper,
   boxShadow: theme.shadows[3]
 }));

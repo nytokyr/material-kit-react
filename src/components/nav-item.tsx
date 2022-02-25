@@ -27,7 +27,7 @@ export const NavItem = (props) => {
           component="a"
           startIcon={icon}
           disableRipple
-          sx={[{
+          sx={(theme) => ({
             backgroundColor: active && 'rgba(255,255,255, 0.08)',
             borderRadius: 1,
             color: active ? 'secondary.main' : 'neutral.300',
@@ -43,7 +43,7 @@ export const NavItem = (props) => {
             '&:hover': {
               backgroundColor: 'rgba(255,255,255, 0.08)'
             }
-          }]}
+          })}
         >
           <Box sx={{ flexGrow: 1 }}>
             {title}
