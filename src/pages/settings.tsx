@@ -34,7 +34,7 @@ const Settings = () => (
   </>
 );
 
-Settings.getLayout = (page) => (
+Settings.getLayout = (page: any) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>

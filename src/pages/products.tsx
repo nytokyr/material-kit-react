@@ -57,7 +57,7 @@ const Products = () => (
   </>
 );
 
-Products.getLayout = (page) => (
+Products.getLayout = (page: any) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>

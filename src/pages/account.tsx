@@ -51,7 +51,7 @@ const Account = () => (
   </>
 );
 
-Account.getLayout = (page) => (
+Account.getLayout = (page: any) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>

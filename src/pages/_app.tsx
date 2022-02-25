@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { CacheProvider } from '@emotion/react';
+import { CacheProvider, EmotionCache } from '@emotion/react';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { CssBaseline } from '@mui/material';
@@ -9,10 +9,10 @@ import { theme } from '../theme';
 
 const clientSideEmotionCache = createEmotionCache();
 
-const App = (props) => {
+const App = (props: { Component: any; emotionCache?: EmotionCache | undefined; pageProps: any; }) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
-  const getLayout = Component.getLayout ?? ((page) => page);
+  const getLayout = Component.getLayout ?? ((page: any) => page);
 
   return (
     <CacheProvider value={emotionCache}>
