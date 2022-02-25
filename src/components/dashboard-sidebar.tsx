@@ -59,7 +59,7 @@ const items = [
   }
 ];
 
-export const DashboardSidebar = (props) => {
+export const DashboardSidebar = (props: { open: any; onClose: any; }) => {
   const { open, onClose } = props;
   const router = useRouter();
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'), {
